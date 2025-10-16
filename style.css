@@ -70,3 +70,12 @@ h1, h2, h3 {
     margin-top: -8px;
     margin-bottom: 2em; 
 }
+
+.cert-grid{
+  list-style:none; margin:6px 0 0; padding:0;
+  display:grid; grid-template-columns: 1fr auto; /* name | date */
+  row-gap:6px; column-gap:12px;
+}
+.cert-grid li{ display:contents; }               /* lets name/date align as a grid row */
+.cert-name{ white-space:nowrap; }
+.cert-date{ color:#666; font-style:italic; }
